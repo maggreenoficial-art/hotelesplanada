@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Esplanada | Cassilândia – MS</title>
+  <meta name="description" content="Hotel Esplanada em Cassilândia – MS. Quartos confortáveis com ar-condicionado, café da manhã completo, Wi-Fi e estacionamento privativo. Reserve direto pelo WhatsApp.">
+  <meta name="theme-color" content="#2E1119">
+  <meta property="og:title" content="Hotel Esplanada | Cassilândia – MS">
+  <meta property="og:description" content="Conforto, café da manhã caprichado e atendimento acolhedor no coração do Bolsão Sul-Mato-Grossense.">
+  <meta property="og:image" content="img/fachada-por-do-sol.webp">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Cinzel:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/fachada-por-do-sol.webp">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Hotel Esplanada",
+    "image": "img/fachada-por-do-sol.webp",
+    "telephone": "+55 67 98122-3282",
+    "logo": "img/logo-horizontal.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Presidente Dutra, 3567",
+      "addressLocality": "Cassilândia",
+      "addressRegion": "MS",
+      "postalCode": "79540-000",
+      "addressCountry": "BR"
+    },
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "Café da manhã", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Estacionamento", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Ar-condicionado", "value": true}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="nav" id="topo">
+  <div class="nav__inner">
+    <a href="#inicio" class="brand" aria-label="Hotel Esplanada — início">
+      <img class="brand__logo" src="img/logo-horizontal-sm.webp" alt="Esplanada Hotel" width="640" height="103">
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#sobre">O Hotel</a>
+      <a href="#quartos">Acomodações</a>
+      <a href="#cafe">Café da manhã</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+    <a href="#reservar" class="btn btn--gold btn--sm nav__cta">Reservar</a>
+    <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+      <span></span><span></span>
+    </button>
+  </div>
+  <div class="menu-mobile" id="menu-mobile" hidden>
+    <a href="#sobre">O Hotel</a>
+    <a href="#quartos">Acomodações</a>
+    <a href="#cafe">Café da manhã</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#localizacao">Localização</a>
+    <a href="#reservar" class="btn btn--gold">Reservar agora</a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__media" aria-hidden="true">
+      <img src="img/fachada-por-do-sol.webp" alt="" fetchpriority="high">
+    </div>
+    <div class="hero__content">
+      <p class="eyebrow reveal">Cassilândia · Mato Grosso do Sul</p>
+      <h1 class="hero__title reveal">Hospitalidade que<br><em>faz você voltar</em></h1>
+      <p class="hero__lead reveal">Quartos amplos, café da manhã caprichado e o atendimento acolhedor de quem recebe bem há muitos anos.</p>
+      <div class="hero__actions reveal">
+        <a href="#reservar" class="btn btn--gold">Verificar disponibilidade</a>
+        <a href="#quartos" class="btn btn--ghost">Conhecer os quartos</a>
+      </div>
+    </div>
+    <a href="#reservar" class="hero__scroll" aria-label="Rolar para reservar"><span></span></a>
+  </section>
+
+  <!-- RESERVA -->
+  <section class="booking" id="reservar" aria-labelledby="booking-title">
+    <form class="booking__form" id="booking-form" novalidate>
+      <h2 class="booking__title" id="booking-title">Reserve direto <span>com o hotel</span></h2>
+      <div class="field">
+        <label for="checkin">Entrada</label>
+        <input type="date" id="checkin" name="checkin" required>
+      </div>
+      <div class="field">
+        <label for="checkout">Saída</label>
+        <input type="date" id="checkout" name="checkout" required>
+      </div>
+      <div class="field">
+        <label for="hospedes">Hóspedes</label>
+        <select id="hospedes" name="hospedes">
+          <option value="1">1 adulto</option>
+          <option value="2" selected>2 adultos</option>
+          <option value="3">3 adultos</option>
+          <option value="4">4 ou mais</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="quarto">Acomodação</label>
+        <select id="quarto" name="quarto">
+          <option>Sem preferência</option>
+          <option>Apartamento Casal</option>
+          <option>Apartamento Duplo</option>
+          <option>Apartamento Triplo</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn--wine booking__submit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg>
+        Consultar pelo WhatsApp
+      </button>
+      <p class="booking__note" id="booking-note" role="status">Melhor tarifa garantida reservando direto. Resposta rápida em horário comercial.</p>
+    </form>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section about" id="sobre">
+    <div class="container about__grid">
+      <div class="about__media reveal">
+        <img src="img/fachada-dia.webp" alt="Fachada do Hotel Esplanada com estacionamento privativo e jardim" loading="lazy" width="1280" height="612">
+        <img class="about__media-inset" src="img/entrada-noite.webp" alt="Pórtico iluminado da entrada do Hotel Esplanada à noite" loading="lazy" width="680" height="510">
+      </div>
+      <div class="about__text">
+        <p class="eyebrow eyebrow--wine reveal">O Hotel</p>
+        <h2 class="title reveal">Seu ponto de descanso <em>no Bolsão</em></h2>
+        <p class="reveal">Na Avenida Presidente Dutra, uma das principais vias de Cassilândia, o Hotel Esplanada recebe quem chega a trabalho, para o agronegócio, eventos ou para visitar a família. Um prédio térreo e amplo, cercado de verde, com estacionamento privativo e fácil acesso para quem vem pela estrada.</p>
+        <p class="reveal">Aqui o essencial é feito com cuidado: quarto limpo e silencioso, cama arrumada, ar-condicionado gelando e um café da manhã que já começa o dia bem.</p>
+        <ul class="stats reveal">
+          <li><strong>24h</strong><span>Recepção</span></li>
+          <li><strong>100%</strong><span>Quartos climatizados</span></li>
+          <li><strong>Grátis</strong><span>Wi-Fi e estacionamento</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUARTOS -->
+  <section class="section rooms" id="quartos">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--wine reveal">Acomodações</p>
+        <h2 class="title reveal">Quartos pensados <em>para descansar</em></h2>
+        <p class="section__lead reveal">Todos os apartamentos contam com ar-condicionado, TV de tela plana, frigobar, mesa de trabalho, enxoval completo e banheiro privativo.</p>
+      </header>
+
+      <div class="rooms__grid">
+        <article class="room reveal">
+          <div class="room__media">
+            <img src="img/quarto-casal.webp" alt="Apartamento Casal com cama de casal, mesa de trabalho e TV" loading="lazy" width="1200" height="900">
+            <span class="room__tag">Até 2 pessoas</span>
+          </div>
+          <div class="room__body">
+            <h3>Apartamento Casal</h3>
+            <p>Cama de casal, mesa de trabalho com duas cadeiras e janela com veneziana para um sono sem claridade.</p>
+            <ul class="room__features">
+              <li>Cama de casal</li><li>Mesa de trabalho</li><li>Frigobar</li>
+            </ul>
+            <a href="#reservar" class="room__link" data-room="Apartamento Casal">Consultar disponibilidade <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="room reveal">
+          <div class="room__media">
+            <img src="img/quarto-duplo.webp" alt="Apartamento Duplo com duas camas de solteiro e poltrona vermelha" loading="lazy" width="1200" height="900">
+            <span class="room__tag">Até 2 pessoas</span>
+          </div>
+          <div class="room__body">
+            <h3>Apartamento Duplo</h3>
+            <p>Duas camas de solteiro e poltrona estofada. Ideal para colegas de trabalho e viagens em dupla.</p>
+            <ul class="room__features">
+              <li>2 camas de solteiro</li><li>Poltrona</li><li>TV tela plana</li>
+            </ul>
+            <a href="#reservar" class="room__link" data-room="Apartamento Duplo">Consultar disponibilidade <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="room reveal">
+          <div class="room__media">
+            <img src="img/quarto-triplo.webp" alt="Apartamento Triplo com cama de casal, cama de solteiro e poltrona" loading="lazy" width="1200" height="900">
+            <span class="room__tag">Até 3 pessoas</span>
+          </div>
+          <div class="room__body">
+            <h3>Apartamento Triplo</h3>
+            <p>Amplo, com cama de casal e cama de solteiro. Perfeito para famílias e pequenos grupos.</p>
+            <ul class="room__features">
+              <li>Casal + solteiro</li><li>Espaço amplo</li><li>Guarda-roupa</li>
+            </ul>
+            <a href="#reservar" class="room__link" data-room="Apartamento Triplo">Consultar disponibilidade <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMODIDADES -->
+  <section class="amenities" aria-labelledby="amen-title">
+    <div class="container">
+      <h2 class="visually-hidden" id="amen-title">Comodidades</h2>
+      <ul class="amenities__list">
+        <li class="reveal"><svg viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg><span>Wi-Fi gratuito</span></li>
+        <li class="reveal"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg><span>Estacionamento privativo</span></li>
+        <li class="reveal"><svg viewBox="0 0 24 24"><path d="M12 2v20M4.9 6l14.2 12M4.9 18 19.1 6M9 3.5 12 6l3-2.5M9 20.5 12 18l3 2.5"/></svg><span>Ar-condicionado</span></li>
+        <li class="reveal"><svg viewBox="0 0 24 24"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9ZM17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 2c0 1.5 1 1.5 1 3M12 2c0 1.5 1 1.5 1 3"/></svg><span>Café da manhã incluso</span></li>
+        <li class="reveal"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span>TV de tela plana</span></li>
+        <li class="reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Recepção 24 horas</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CAFÉ -->
+  <section class="section breakfast" id="cafe">
+    <div class="breakfast__media reveal">
+      <img src="img/cafe-da-manha.webp" alt="Salão do café da manhã com buffet de frutas, pães, cereais e mesas" loading="lazy" width="1200" height="900">
+    </div>
+    <div class="breakfast__card reveal">
+      <p class="eyebrow">Café da manhã</p>
+      <h2 class="title title--light">Comece o dia <em>com sabor</em></h2>
+      <p>Servido todas as manhãs em um salão claro e arejado: frutas da estação, pães, bolos caseiros, frios, cereais, sucos, café fresquinho e quitutes quentes.</p>
+      <dl class="breakfast__hours">
+        <div><dt>Segunda a sábado</dt><dd>6h às 9h</dd></div>
+        <div><dt>Domingos e feriados</dt><dd>6h30 às 9h30</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="section gallery" id="galeria">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--wine reveal">Galeria</p>
+        <h2 class="title reveal">Um olhar <em>por dentro</em></h2>
+      </header>
+      <div class="gallery__grid">
+        <button class="g g--wide reveal" data-index="0"><img src="img/fachada-por-do-sol.webp" alt="Fachada do hotel ao pôr do sol" loading="lazy"></button>
+        <button class="g reveal" data-index="1"><img src="img/entrada-noite.webp" alt="Entrada iluminada à noite" loading="lazy"></button>
+        <button class="g reveal" data-index="2"><img src="img/quarto-triplo.webp" alt="Apartamento Triplo" loading="lazy"></button>
+        <button class="g g--wide reveal" data-index="3"><img src="img/cafe-da-manha.webp" alt="Salão do café da manhã" loading="lazy"></button>
+        <button class="g reveal" data-index="4"><img src="img/quarto-duplo.webp" alt="Apartamento Duplo" loading="lazy"></button>
+        <button class="g reveal" data-index="5"><img src="img/quarto-detalhe.webp" alt="TV, frigobar e mesa de trabalho do quarto" loading="lazy"></button>
+        <button class="g g--wide reveal" data-index="6"><img src="img/fachada-dia.webp" alt="Fachada e estacionamento" loading="lazy"></button>
+        <button class="g reveal" data-index="7"><img src="img/quarto-casal.webp" alt="Apartamento Casal" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section quotes" aria-labelledby="quotes-title">
+    <div class="container">
+      <header class="section__head section__head--center">
+        <p class="eyebrow reveal">Hóspedes</p>
+        <h2 class="title title--light reveal" id="quotes-title">O que mais <em>elogiam</em></h2>
+      </header>
+      <ul class="quotes__list">
+        <li class="reveal"><span class="quotes__icon">✦</span><h3>Limpeza</h3><p>Quartos e enxoval sempre impecáveis, arrumados todos os dias.</p></li>
+        <li class="reveal"><span class="quotes__icon">✦</span><h3>Atendimento</h3><p>Equipe atenciosa, que resolve rápido e trata o hóspede pelo nome.</p></li>
+        <li class="reveal"><span class="quotes__icon">✦</span><h3>Café da manhã</h3><p>Variado, com frutas frescas, bolos caseiros e reposição constante.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section class="section location" id="localizacao">
+    <div class="container location__grid">
+      <div class="location__info">
+        <p class="eyebrow eyebrow--wine reveal">Localização</p>
+        <h2 class="title reveal">Fácil de chegar, <em>bom de ficar</em></h2>
+        <address class="reveal">
+          <strong>Hotel Esplanada</strong><br>
+          Av. Presidente Dutra, 3567<br>
+          Cassilândia – MS · CEP 79540-000
+        </address>
+        <ul class="contact reveal">
+          <li><span>Telefone e WhatsApp</span><p><a href="#" data-phone></a> · <a href="#" data-whats target="_blank" rel="noopener">enviar mensagem</a></p></li>
+          <li><span>Check-in / Check-out</span><p>A partir das 12h · até as 12h</p></li>
+        </ul>
+        <div class="location__actions reveal">
+          <a class="btn btn--wine" href="https://www.google.com/maps/dir/?api=1&destination=Hotel+Esplanada+Av.+Presidente+Dutra+3567+Cassil%C3%A2ndia+MS" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+      </div>
+      <div class="location__map reveal">
+        <iframe title="Mapa do Hotel Esplanada em Cassilândia" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Hotel+Esplanada,+Av.+Presidente+Dutra,+3567,+Cassil%C3%A2ndia+-+MS&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta__inner reveal">
+      <img class="cta__mark" src="img/logo-monograma.webp" alt="" width="424" height="295" loading="lazy">
+      <h2 class="title title--light">Sua próxima estadia em Cassilândia <em>começa aqui</em></h2>
+      <a href="#reservar" class="btn btn--gold">Reservar agora</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <img class="footer__logo" src="img/logo-horizontal-sm.webp" alt="Esplanada Hotel" width="640" height="103" loading="lazy">
+    </div>
+    <div>
+      <h3>Endereço</h3>
+      <p>Av. Presidente Dutra, 3567<br>Cassilândia – MS<br>CEP 79540-000</p>
+    </div>
+    <div>
+      <h3>Contato</h3>
+      <p><a href="#" data-phone></a><br><a href="#" data-whats target="_blank" rel="noopener">WhatsApp</a></p>
+    </div>
+    <div>
+      <h3>Navegue</h3>
+      <p><a href="#quartos">Acomodações</a><br><a href="#cafe">Café da manhã</a><br><a href="#localizacao">Localização</a></p>
+    </div>
+  </div>
+  <p class="footer__legal">© <span id="ano"></span> Hotel Esplanada · Cassilândia – MS</p>
+</footer>
+
+<a class="whats-float" href="#" data-whats-float target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg>
+</a>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galeria de fotos" hidden>
+  <button class="lightbox__close" aria-label="Fechar">×</button>
+  <button class="lightbox__nav lightbox__nav--prev" aria-label="Foto anterior">‹</button>
+  <figure>
+    <img src="" alt="">
+    <figcaption></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" aria-label="Próxima foto">›</button>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
